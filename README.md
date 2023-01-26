@@ -1,5 +1,5 @@
 # Taurus-Decode
-A python script that replaces obfuscated strings within the Taurus AutoIT loader with their de-obfuscated equivilent. This is a proof-of-concept and its not anticipated to be maintained over time. 
+A python script that replaces obfuscated strings within the Taurus AutoIT loader with their de-obfuscated equivalent. This is a proof-of-concept and it's not anticipated to be maintained over time. 
 
 # Usage
 
