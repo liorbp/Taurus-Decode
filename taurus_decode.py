@@ -24,7 +24,7 @@ def extract_encoded_line(line, delim, func):
 # Use further regex to extract the "offset" key by looking for the delimeter, followed by a 1-3 character digit, comma, and finally the offset key
 # Replace the obfuscated line with the deobfuscated one
     clean_fucn = re.escape(func)
-  	clean_delim = re.escape(delim)
+    clean_delim = re.escape(delim)
     encoded_strings = re.findall(clean_fucn + '\("(?:[\d]{1,3}[' + clean_delim + ']{0,1}){1,}\",([\d]{1,3})', line)
     key_ints = re.findall(delim + '[0-9]{1,3}",(\d)', line)
     if len(key_ints) == len(encoded_strings):
